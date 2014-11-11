@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script src="lib/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="controller/helloWorldCtrl.js"></script>
+</head>
+<body ng-app="helloworld">
+    <div ng-controller="helloWorldCtrl as hw">
+        <input ng-model="hw.name" type="text" />
+        <div>Hello, {{hw.name}}</div>
+    </div>
+</body>
+</html>
